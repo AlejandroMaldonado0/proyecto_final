@@ -34,11 +34,11 @@ Para poder ejecutar la calculadora se debe descaragar o clonar el repositorio ll
 
  ### Còmo probarlo
 para probarlo debemos ecribir lo siguente dependiendo de la operacion que desee:
-*suma= add(n1,n2)
-*resta= sub(n1, n2)
-*división= div(n1, n2)
-*multiplicacion= mul(n1,n2)
-*modulo = mod(n1,n2)
+* suma= add(n1,n2)
+* resta= sub(n1, n2)
+* división= div(n1, n2)
+* multiplicacion= mul(n1,n2)
+* modulo = mod(n1,n2)
 
 
 ### Autores y Créditos 
