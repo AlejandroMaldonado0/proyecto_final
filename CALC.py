@@ -32,14 +32,13 @@ def tomar_numeros(numeros_operacion, resultado):
     lista_numeros = numeros_operacion.split(",")
     n = lista_numeros[0] 
     m = lista_numeros[-1] 
+    return n,m
 
-def ejecutar_numeros( nombre_operacion, n, m ):
-    operacion:str=leer_operacion()
-    nombre_operacion:str= operacion[0:3]
-    n,m=tomar_numeros(operacion[4:-1])
+def ejecutar_numeros(nombre_operacion,n,m,resultado):
 
     if n.lower().strip() == 'r':
                 n= resultado
+    n,m=float(n),float(m)
     if nombre_operacion == "add":
                 resultado = add(n, m)
     elif nombre_operacion == "sub":
@@ -59,19 +58,16 @@ def ejecutar_numeros( nombre_operacion, n, m ):
 def calculadora():
     resultado = 0
     while True:
-            operacion: str = leer_operacion()
+        operacion: str = leer_operacion()
 
-            if operacion == 'exit':
-                print('Goodbye')
-                break
+        if operacion == 'exit':
+            print('Goodbye')
+            break
 
-    
-            nombre_operacion: str = operacion[0:3] 
-            n,m = tomar_numeros(operacion[4:-1],resultado)
-            resultado = ejecutar_numeros(nombre_operacion, n, m)
 
-    print(resultado)
-        
-        
-        
+        nombre_operacion: str = operacion[0:3] 
+        n , m = tomar_numeros(operacion[4:-1],resultado)
+        resultado = ejecutar_numeros(nombre_operacion, n, m,resultado)
+
+        print(resultado)
 calculadora()
