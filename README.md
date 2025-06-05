@@ -39,6 +39,8 @@ para probarlo debemos ecribir lo siguente dependiendo de la operacion que desee:
 * división= div(n1, n2)
 * multiplicacion= mul(n1,n2)
 * modulo = mod(n1,n2)
+* para utilizar el resultado anterior debemos poner "r" en el primer numero ejemplo:
+   * add(r,n2)
 
 
 ### Autores y Créditos 
